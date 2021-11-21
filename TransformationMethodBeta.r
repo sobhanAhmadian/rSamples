@@ -1,9 +1,10 @@
-n = 1000
+n = 5
 a = 3
-b = 2
+b = 4
 u = rgamma(n, shape = a, rate =1)
 v = rgamma(n, shape = b, rate =1)
 x = u / (u + v)
+x
 
 r = seq(0, 1, 0.01)
 f = dbeta(r, a, b)
