@@ -1,3 +1,4 @@
+# Example 5.10
 m <- 10000
 theta_hat <- se <- numeric(5)
 g <- function(x) {
