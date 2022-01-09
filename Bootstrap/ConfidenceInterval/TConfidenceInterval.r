@@ -25,7 +25,7 @@ function(x, B = 500, R = 100, level = .95, statistic) {
     alpha <- 1 - level
     Qt <- quantile(t.stats, c(alpha / 2, 1 - alpha / 2), type = 1)
     names(Qt) <- rev(names(Qt))
-    CI <- rev(stat0 - Qt * se0)
+    return(rev(stat0 - Qt * se0))
 }
 
 n <- 16
