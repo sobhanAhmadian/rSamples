@@ -1,3 +1,4 @@
+# Example 6.3
 m <- 1000
 n <- 20
 count <- n / 2 - 1

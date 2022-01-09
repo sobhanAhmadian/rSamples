@@ -1,3 +1,4 @@
+# Example 6.4
 n <- 20
 alpha <- .05
 x <- rnorm(n, 0, 2)

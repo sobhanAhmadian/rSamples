@@ -1,3 +1,4 @@
+# Example 6.7
 n <- 20
 alpha <- .05
 mu0 <- 500
@@ -6,7 +7,6 @@ m <- 10000
 p <- numeric(m)
 
 for (j in 1:m) {
-    #number of replicates #storage for p-values
     x <- rnorm(n, mu0, sigma)
     ttest <- t.test(x, alternative = "greater", mu = mu0)
     p[j] <- ttest$p.value
